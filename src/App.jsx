@@ -1,11 +1,12 @@
 import React from "react";
-import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Modal from "./Modal";
 
 const HeaderWrapper = styled.div`
   background-color: #ff6868;
-  height: 50px; 
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +15,7 @@ const HeaderWrapper = styled.div`
 
 const FooterWrapper = styled.div`
   background-color: #ff6868;
-  height: 50px; 
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,13 +34,13 @@ const IconLink = styled.a`
 function App() {
   return (
     <>
-      <HeaderWrapper>  
-        D-DAY Web Mini Project
-      </HeaderWrapper>
+      <HeaderWrapper>D-DAY Web Mini Project</HeaderWrapper>
 
-      
-      <FooterWrapper> 
-      <IconLink href="https://github.com/zook0320/d-day/tree/main" target="_blank"><FontAwesomeIcon icon={faGithub} /></IconLink>
+      <Modal />
+      <FooterWrapper>
+        <IconLink href="https://github.com/zook0320/d-day/tree/main" target="_blank">
+          <FontAwesomeIcon icon={faGithub} />
+        </IconLink>
       </FooterWrapper>
     </>
   );
